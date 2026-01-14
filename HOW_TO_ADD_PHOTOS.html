@@ -1,0 +1,339 @@
+<!-- 
+  ================================================================
+  ИНСТРУКЦИЯ: Как добавить реальные фотографии STORM
+  ================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция: Добавление фотографий STORM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a2140 100%);
+            color: #f8fafc;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(26, 33, 64, 0.8);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(99, 102, 241, 0.2);
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #a78bfa;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid rgba(99, 102, 241, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #c4b5fd;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p,
+        li {
+            color: #cbd5e1;
+            margin-bottom: 0.5rem;
+        }
+
+        ol,
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .step {
+            background: rgba(99, 102, 241, 0.1);
+            border-left: 4px solid #6366f1;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+        }
+
+        .warning {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+        }
+
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            font-family: 'Courier New', monospace;
+            color: #a78bfa;
+        }
+
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .checklist li::before {
+            content: '☐ ';
+            color: #6366f1;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        a {
+            color: #a78bfa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><span class="emoji">📸</span>Добавление фотографий в галерею STORM</h1>
+
+        <p>Эта инструкция поможет вам заменить placeholder-изображения на реальные фотографии вашего компьютерного
+            клуба.</p>
+
+        <h2>🗂️ Шаг 1: Подготовка структуры</h2>
+
+        <div class="step">
+            <h3>Создайте папку images</h3>
+            <p>В папке STORM создайте новую папку с названием <code>images</code>:</p>
+            <pre><code>STORM/
+├── images/          ← Новая папка
+├── index.html
+├── style.css
+└── script.js</code></pre>
+        </div>
+
+        <h2>📷 Шаг 2: Сбор фотографий</h2>
+
+        <p>Сфотографируйте следующие зоны вашего клуба:</p>
+
+        <ol>
+            <li><strong>Standard Zone</strong> — игровые места начального уровня</li>
+            <li><strong>Standard Plus Zone</strong> — улучшенные места с ASUS периферией</li>
+            <li><strong>Comfort Zone</strong> — комфортная зона</li>
+            <li><strong>Cyber Zone</strong> — киберспортивная зона</li>
+            <li><strong>VIP Zone</strong> — премиальные места с Logitech</li>
+            <li><strong>THRONE</strong> — топовый сетап (i9 + RTX 3080)</li>
+            <li><strong>Lounge-зона</strong> — зона отдыха</li>
+            <li><strong>Турнирная зона</strong> — место проведения соревнований</li>
+            <li><strong>Магазин периферии</strong> — витрина с девайсами</li>
+            <li><strong>Общий вид клуба</strong> — панорама зала</li>
+        </ol>
+
+        <div class="warning">
+            <strong>⚠️ Важно:</strong>
+            <ul>
+                <li>Фотографируйте в хорошем освещении</li>
+                <li>Выделите RGB-подсветку и неоновые акценты</li>
+                <li>Покажите мониторы, клавиатуры, мыши крупным планом</li>
+                <li>Сделайте несколько ракурсов каждой зоны</li>
+            </ul>
+        </div>
+
+        <h2>🎨 Шаг 3: Оптимизация изображений</h2>
+
+        <h3>Онлайн-инструменты (самый простой способ):</h3>
+
+        <ol>
+            <li>Откройте <a href="https://squoosh.app" target="_blank">Squoosh.app</a></li>
+            <li>Загрузите ваше фото</li>
+            <li>Настройте параметры:
+                <ul>
+                    <li><strong>Формат:</strong> WebP (или JPEG)</li>
+                    <li><strong>Качество:</strong> 80-85</li>
+                    <li><strong>Resize:</strong> 1200 × 900 px</li>
+                </ul>
+            </li>
+            <li>Скачайте оптимизированное изображение</li>
+        </ol>
+
+        <h3>Альтернативные инструменты:</h3>
+        <ul>
+            <li><a href="https://tinypng.com" target="_blank">TinyPNG</a> — простое сжатие</li>
+            <li><a href="https://compressor.io" target="_blank">Compressor.io</a> — продвинутая компрессия</li>
+        </ul>
+
+        <h2>📁 Шаг 4: Именование файлов</h2>
+
+        <p>Переименуйте оптимизированные фото согласно этой схеме:</p>
+
+        <div class="step">
+            <ul>
+                <li><code>zone-standard.webp</code></li>
+                <li><code>zone-standard-plus.webp</code></li>
+                <li><code>zone-comfort.webp</code></li>
+                <li><code>zone-cyber.webp</code></li>
+                <li><code>zone-vip.webp</code></li>
+                <li><code>zone-throne.webp</code></li>
+                <li><code>lounge.webp</code></li>
+                <li><code>tournament.webp</code></li>
+                <li><code>shop.webp</code></li>
+                <li><code>club-overview.webp</code></li>
+            </ul>
+        </div>
+
+        <h2>🔧 Шаг 5: Обновление кода</h2>
+
+        <h3>Откройте файл <code>script.js</code></h3>
+
+        <p>Найдите функцию <code>initGallery()</code> (примерно строка 134) и замените блок с массивом изображений:</p>
+
+        <div class="step">
+            <p><strong>Было (с placeholder):</strong></p>
+            <pre><code>const galleryImages = [
+    { alt: 'STORM Gaming Setup 1', placeholder: true },
+    { alt: 'STORM Gaming Setup 2', placeholder: true },
+    // ...
+];</code></pre>
+
+            <p><strong>Стало (с реальными фото):</strong></p>
+            <pre><code>const galleryImages = [
+    { src: 'images/zone-standard.webp', alt: 'STORM Standard Zone' },
+    { src: 'images/zone-standard-plus.webp', alt: 'STORM Standard Plus' },
+    { src: 'images/zone-comfort.webp', alt: 'STORM Comfort Zone' },
+    { src: 'images/zone-cyber.webp', alt: 'STORM Cyber Zone' },
+    { src: 'images/zone-vip.webp', alt: 'STORM VIP Zone' },
+    { src: 'images/zone-throne.webp', alt: 'STORM THRONE' },
+    { src: 'images/lounge.webp', alt: 'Lounge-зона STORM' },
+    { src: 'images/tournament.webp', alt: 'Турнирная зона' },
+    { src: 'images/shop.webp', alt: 'Магазин периферии' },
+    { src: 'images/club-overview.webp', alt: 'Компьютерный клуб STORM' }
+];</code></pre>
+        </div>
+
+        <h3>Также обновите функцию <code>createGalleryItem()</code></h3>
+
+        <div class="step">
+            <p>Найдите строку (примерно 154):</p>
+            <pre><code>img.src = createPlaceholderImage(index);</code></pre>
+
+            <p>Замените на:</p>
+            <pre><code>img.src = imgData.src;</code></pre>
+
+            <p>И удалите условие:</p>
+            <pre><code>// Создаем placeholder с градиентом
+// ВСЮ ЭТУ СЕКЦИЮ МОЖНО УДАЛИТЬ</code></pre>
+        </div>
+
+        <h2>✅ Шаг 6: Проверка результата</h2>
+
+        <ul class="checklist">
+            <li>Все фото оптимизированы и помещены в папку <code>images/</code></li>
+            <li>Код в <code>script.js</code> обновлён</li>
+            <li>Файлы сохранены</li>
+            <li>Открыт <code>index.html</code> в браузере</li>
+            <li>Галерея отображает реальные фото</li>
+            <li>Изображения загружаются быстро</li>
+        </ul>
+
+        <h2>🚀 Шаг 7: Деплой</h2>
+
+        <p>После добавления фотографий:</p>
+
+        <ol>
+            <li>Проверьте, что все изображения отображаются корректно</li>
+            <li>Протестируйте на мобильных устройствах</li>
+            <li>Загрузите обновлённые файлы на хостинг</li>
+            <li>Очистите кеш CDN (если используется)</li>
+        </ol>
+
+        <h2>📊 Оптимальные параметры изображений</h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+            <tr style="background: rgba(99, 102, 241, 0.2);">
+                <th style="padding: 0.75rem; text-align: left; border: 1px solid rgba(99, 102, 241, 0.3);">Параметр</th>
+                <th style="padding: 0.75rem; text-align: left; border: 1px solid rgba(99, 102, 241, 0.3);">Значение</th>
+            </tr>
+            <tr>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">Формат</td>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">WebP (предпочтительно) или JPEG
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">Размер</td>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">1200 × 900 px (соотношение 4:3)
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">Качество</td>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">80-85%</td>
+            </tr>
+            <tr>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">Вес файла</td>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">
+                    < 200 KB</td>
+            </tr>
+            <tr>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">Название</td>
+                <td style="padding: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">Латиница, строчные, дефисы</td>
+            </tr>
+        </table>
+
+        <h2>🆘 Решение проблем</h2>
+
+        <h3>Изображения не отображаются</h3>
+        <ul>
+            <li>Проверьте, что папка <code>images/</code> находится в той же директории, что и <code>index.html</code>
+            </li>
+            <li>Убедитесь, что названия файлов в коде точно совпадают с реальными названиями</li>
+            <li>Проверьте расширения файлов (.webp, .jpg)</li>
+            <li>Очистите кеш браузера (Ctrl+F5)</li>
+        </ul>
+
+        <h3>Изображения загружаются медленно</h3>
+        <ul>
+            <li>Уменьшите размер файлов (цель: < 200 KB)</li>
+            <li>Используйте WebP вместо JPEG</li>
+            <li>Снизьте качество в Squoosh до 75-80</li>
+        </ul>
+
+        <div class="warning" style="margin-top: 2rem; background: rgba(99, 102, 241, 0.1); border-color: #6366f1;">
+            <strong>💡 Совет:</strong> Сохраните исходные фотографии высокого разрешения в отдельной папке на случай,
+            если понадобится пересоздать оптимизированные версии.
+        </div>
+
+        <p style="text-align: center; margin-top: 3rem; font-size: 1.25rem;">
+            <strong>Готово! Теперь ваша галерея STORM наполнена реальными фотографиями 🎉</strong>
+        </p>
+    </div>
+</body>
+
+</html>
